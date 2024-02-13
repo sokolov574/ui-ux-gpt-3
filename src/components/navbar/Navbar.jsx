@@ -3,6 +3,16 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
 
+const Menu = () => (
+  <>
+  <p><a href="#home">Home</a></p>
+  <p><a href="#wgpt3">What is GPT3?</a></p>
+  <p><a href="#possibility">Open AI</a></p>
+  <p><a href="#features">Case Studies</a></p>
+  <p><a href="#blog">Library</a></p>
+  </>
+)
+
 //BEM -> Block Element Modifier
 
 const Navbar = () => {
@@ -15,11 +25,7 @@ const Navbar = () => {
           <img src={logo} />
         </div>
         <div className="gpt3__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">What is GPT3?</a></p>
-          <p><a href="#possibility">Open AI</a></p>
-          <p><a href="#features">Case Studies</a></p>
-          <p><a href="#blog">Library</a></p>
+          <Menu />
         </div>
       </div>
       <div className="gpt3__navbar-sign">
@@ -50,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar; 
